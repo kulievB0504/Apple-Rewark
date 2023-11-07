@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+}
+
+.search,
+.shopping svg {
+    display: flex;
+    margin-left: 10px;
+    gap: 20px;
+    width: 45px;
+    cursor: pointer;
+}
+
+
+.header_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    font-size: 12px;
+}
+
+.nav__link {
+
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(92, 89, 89);
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color .2s linear;
+    position: relative;
+    font-weight: 400;
+    line-height: 20px;
+
+    &:hover {
+        color: rgb(42, 41, 41);
+    }
+}
+
+.credit_conditions {
+    padding-top: 20px;
+    background-color: #f5f5f7;
+    width: 975px;
+    margin: 0 auto;
+}
+
+.creditation_title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.credit_conditions_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 14px 0;
+    gap: 25px;
+}
+
+
+.deals {
+    display: flex;
+
+}
+
+.deals img {
+    height: 24px;
+}
+
+.deals p {
+    max-width: 145px;
+    margin-left: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.deals__link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    color: #06c;
+    cursor: pointer;
+}
+
+.deals__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    display: none;
+    height: 1px;
+    background-color: #06c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: .3s;
+}
+
+.deals__link:hover::after {
+    display: block;
+    background-color: #06c;
+}
+
+
+.iphone_ad h1 {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.price_ad {
+    line-height: 1.42859;
+    font-weight: 400;
+    color: #1d1d1f;
+}
+
+.purchase_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.purchase {
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    color: #06c;
+    cursor: pointer;
+    background-color: #f5f5f7;
+    border-radius: 18px;
+    padding: 12px 16px;
+    margin: 6px 0;
+}
+
+.purchase__link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.iphone_ad_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.section {
+    padding: 52px 0 22px;
+}
+
+
+.tabcontent img {
+    width: 65%;
+    height: 65%;
+    border-radius: 12px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.colors-iphone-buttons-click {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.Natural {
+    color: transparent;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #a39683;
+
+}
+
+.Blue {
+    color: transparent;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #043458;
+}
+
+.White {
+    color: transparent;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.Black {
+    color: transparent;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #201D24;
+
+}
+
+
+.tabcontent:not(:first-child) {
+    display: none;
+  }

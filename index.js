@@ -39,11 +39,11 @@ const whiteBtn = document.querySelector('.white_col');
 const greyBtn = document.querySelector('.gray_col');
 
 whiteBtn.onclick = () => {
-    macInfo.inne = 'White';
+    macInfo.innerHTML = 'White';
 }
 
 greyBtn.onclick = () => {
-    macInfo.inne = 'Space Grey';
+    macInfo.innerHTML = 'Space Grey';
 }
 
 

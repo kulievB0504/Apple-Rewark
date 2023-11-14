@@ -171,22 +171,32 @@
     padding: 52px 0 22px;
 }
 
+sup {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.tabcontainer {
+    transition: .3s ease;
+}
+
+.Iphone__catalog {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
 
 .tabcontent img {
-    width: 65%;
-    height: 65%;
-    border-radius: 12px;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
 }
 
-
-.hide {
-    display: none;
+.tabcontent {
+    width: 730px;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
 
 .colors-iphone-buttons-click {
     display: flex;
@@ -200,6 +210,7 @@
     cursor: pointer;
     transition: .3s;
 }
+
 
 
 .colors-iphone-buttons-click button,
@@ -251,6 +262,7 @@
     background-color: #201D24;
 
 }
+
 
 
 .tabcontent:not(:first-child) {
@@ -418,4 +430,684 @@
     text-align: right;
     font-size: 14px;
     font-weight: 600;
+}
+
+.Iphone__catalog__box {
+    position: sticky;
+    top: 230px;
+    height: 300px;
+}
+
+.Iphone__catalog__box_right h3:first-child {
+    padding-top: 30px;
+}
+.Iphone__catalog__box_right h3 {
+    color: #86868b;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.Iphone__catalog__box_right .questionspan {
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.iphone_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.from-selector-title {
+    font-weight: 560;
+    font-size: 21px;
+}
+
+.form-label-small {
+    color: #86868b;
+}
+
+.iphone-borders-configuration {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    border-color: #86868b;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.price-point-link,
+.prices {
+    text-decoration: none;
+    color: #86868b;
+}
+
+
+.decision-support {
+    border-radius: 12px;
+    background-color: #f5f5f7;
+    padding: 16px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.decisionsection {
+    max-width: 90%;
+}
+
+.decisionsection-header {
+    font-weight: 600;
+}
+
+
+
+.iphone-borders-configuration-video-storage {
+    border-radius: 12px;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: #f5f5f7;
+    display: flex;
+}
+
+.from-selector-imagelikevideo {
+    position: relative;
+    width: 126px;
+    height: 120px;
+}
+
+.from-selector-imagelikevideo img {
+    position: relative;
+    width: 126px;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.from-selector-imagelikevideo .mplayer {
+    z-index: 500;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    top: 40%;
+    right: 42%;
+}
+
+.from-title-clue-flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 53%;
+    padding: 16px;
+}
+
+.from-selector-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.from-selector-clue {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.modal {
+    background-color: #FFF;
+    color: #000;
+    max-width: 810px;
+    padding: 30px 0;
+    border-radius: 14px;
+    position: absolute;
+    top: 50%;
+    /* bottom: 35%; */
+    left: 50%;
+    transform: translate(-42%, -50%);
+    box-shadow: 0px 0px 10px #c4c4c4;
+    display: none;
+    opacity: 0;
+    transition: .5s ease;
+    scale: 1;
+    z-index: 9999;
+    /* overflow: hidden; */
+}
+
+.modal__background {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    display: none;
+    opacity: 0;
+    transition: .5s ease;
+    scale: 1;
+overflow: auto;
+overflow: scroll;}
+
+.modal__close {
+    background: #e8e8ed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+}
+
+.modal .modal__close {
+    margin-left: 20px;
+}
+
+.modal__title h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+.modal__title {
+    margin: 0 100px;
+}
+
+.modal__text {
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+
+.iphone__specialist {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    color: #06c;
+    cursor: pointer;
+
+}
+
+.iphone__specialist::after {
+    content: "";
+    display: block;
+    width: 100%;
+    display: none;
+    height: .5px;
+    background-color: #06c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: .3s;
+}
+
+.iphone__specialist:hover {
+    color: #06c;
+}
+
+.iphone__specialist:active {
+    color: #06c;
+}
+
+.iphone__specialist:hover::after {
+    display: block;
+    background-color: #06c;
+
+
+
+}
+
+
+.atandt {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/att-special-deals?wid=306&hei=132&fmt=png-alpha&.v=1658193314910");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 92px;
+    border-radius: 40px;
+}
+
+.tabnav__images a {
+    color: transparent;
+
+
+}
+
+.tmobile {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/tmobile-special-deals?wid=345&hei=132&fmt=png-alpha&.v=1658193315039");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 92px;
+    border-radius: 40px;
+}
+
+
+.verizone {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/verizon-special-deals?wid=336&hei=132&fmt=png-alpha&.v=1658193314689");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 92px;
+    border-radius: 40px;
+}
+
+.tabnav__images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+.tabnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.iphone-borders-configuration-tabnav {
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #86868b;
+    background-color: transparent;
+    height: 50px;
+    width: 450px;
+    padding: 24px 14px 3px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+
+
+
+.select__absolute {
+    position: relative;
+}
+
+.select__absolute p {
+    color: #6e6e73;
+    top: 8px;
+    left: 19px;
+    font-size: 12px;
+    position: absolute;
+}
+
+
+.field {
+    border: none;
+    padding: 0px 80px 0px 80px;
+    background-color: #f5f5f7;
+    transition: .3s ease;
+
+}
+
+
+.field-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    cursor: pointer;
+    transition: .3s ease;
+    border-bottom: 1px solid #c7c7c8;
+
+}
+
+.field-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.field-content.open {
+    max-height: 1000px;
+    transition: .3s ease;
+
+}
+
+.field-header h2 {
+    padding: 0 10px 5px 0;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+}
+
+.rc-carrierpromotion-plan {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 131px; */
+    padding-top: 20px;
+    border-bottom: 1px solid #c7c7c8;
+}
+
+.rc-carrierpromotion-plan h3 {
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    width: 100px;
+}
+
+.rc-carrierpromotion-plan-selector-tite {
+    display: flex;
+    flex-direction: column;
+    width: 484px;
+}
+
+.rc-carrierpromotion-plan-selector-tite .from-selector-title {
+    padding-bottom: 25px;
+}
+
+
+.rc-carrierpromotion-plan-selector-tite p:nth-child(2) {
+    padding-bottom: 0;
+}
+
+.rc-carrierpromotion-plan-selector-tite p:nth-child(4) {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.rc-carrierpromotion-plan-selector-tite p:nth-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.rc-carrierpromotion-plan-selector-tite .form-label-small {
+    margin: 5px 0 20px 0;
+}
+
+
+.from-unselector-title {
+    font-size: 14px;
+    line-height: 1.33337;
+    font-weight: 600;
+    letter-spacing: -.01em;
+}
+
+
+
+
+
+
+.field-two {
+    border: none;
+    padding: 0px 80px 0px 80px;
+    background-color: #f5f5f7;
+    transition: .3s ease;
+
+}
+
+.field-header-two {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    cursor: pointer;
+    transition: .3s ease;
+    border-bottom: 1px solid #c7c7c8;
+
+}
+
+.field-content-two {
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.field-content-two.open {
+    max-height: 1000px;
+    transition: .3s ease;
+
+}
+
+.field-header-two h2 {
+    padding: 0 10px 5px 0;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+}
+
+
+.rc-carrierpromotion-plan-two {
+    display: flex;
+    gap: 85px;
+    padding-top: 20px;
+
+
+    border-bottom: 1px solid #c7c7c8;
+
+
+}
+
+
+
+.rc-carrierpromotion-plan-two h3 {
+    font-size: 17px;
+    line-height: 1.23536;
+    width: 100px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+
+}
+
+.rc-carrierpromotion-plan-selector-tite .form-label-small-small {
+    margin: 0px 0 15px 0;
+
+    color: #86868b;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.field-two {
+    border: none;
+    padding: 0px 80px 0px 80px;
+    background-color: #f5f5f7;
+    transition: .3s ease;
+
+}
+
+.field-header-two {
+    padding: 50px 0;
+    cursor: pointer;
+    transition: .3s ease;
+    border-bottom: 1px solid #c7c7c8;
+
+}
+
+.field-content-two {
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.field-content-two.open {
+    max-height: 1000px;
+    transition: .3s ease;
+
+}
+
+.field-header-two h2 {
+    padding: 0 10px 5px 0;
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+}
+
+.rc-carrierpromotion-plan-two {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 131px; */
+    padding-top: 20px;
+    border-bottom: 1px solid #c7c7c8;
+}
+
+.rc-carrierpromotion-plan-two h3 {
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    width: 100px;
+}
+
+.rc-carrierpromotion-plan-selector-tite-two {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+}
+
+.rc-carrierpromotion-plan-selector-tite-two .from-selector-title {
+    padding-bottom: 25px;
+}
+
+
+.rc-carrierpromotion-plan-selector-tite-two p:nth-child(2) {
+    padding-bottom: 0;
+}
+
+.rc-carrierpromotion-plan-selector-tite-two p:nth-child(4) {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.rc-carrierpromotion-plan-selector-tite-two p:nth-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.rc-carrierpromotion-plan-selector-tite-two .form-label-small {
+    margin: 5px 0 20px 0;
+}
+
+
+.from-unselector-title-two {
+    font-size: 14px;
+    line-height: 1.33337;
+    font-weight: 600;
+    letter-spacing: -.01em;
+}
+
+
+
+
+
+.field-tree {
+    border: none;
+    background-color: #f5f5f7;
+    transition: .3s ease;
+    padding: 29px 80px 57px;
+}
+
+
+.field-tree p {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+
+.span__tabnav__changing {
+    padding: 0 0 30px 0;
+}
+
+
+.specialist__link {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    color: #06c;
+    cursor: pointer;
+
+}
+
+.specialist__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    display: none;
+    height: 1px;
+    background-color: #06c;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: .3s;
+}
+
+.specialist__link:hover {
+    color: #06c;
+}
+
+.specialist__link:active {
+    color: #06c;
+}
+
+.specialist__link:hover::after {
+    display: block;
+    background-color: #06c;
+
+
+
+}
+
+.modal__question__box {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.specialist__image {
+    background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/step1-chat-specialist_AV4?wid=108&hei=108&fmt=png-alpha&.v=1655399908783");
+    background-color: rgb(0, 94, 255);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    object-fit: cover;
+    width: 40px;
+    border-radius: 50%;
 }

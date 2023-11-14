@@ -4,11 +4,18 @@ const tabContents = document.querySelectorAll(".tabcontainer .tabcontent");
 buttons.forEach((btn, idx) => {
     btn.addEventListener("click", () => {
         tabContents.forEach((tabContent) => {
+            tabContent.style.opacity = 0; // Начинаем с нулевой прозрачности
             tabContent.style.display = "none";
         });
         tabContents[idx + 1].style.display = "block";
+        tabContents[idx + 1].style.transition = ".5s ease"; // применяем анимацию transition
+        setTimeout(() => {
+            tabContents[idx + 1].style.opacity = 1; 
+        }); 
     });
 });
+
+
 
 
 
@@ -35,7 +42,7 @@ macBTn.forEach((mBtn, idx) => {
     });
 });
 
-const whiteBtn = document.querySelector('.white_col');
+const whiteBtn = document.querySelector('.white_col');2
 const greyBtn = document.querySelector('.gray_col');
 
 whiteBtn.onclick = () => {
@@ -58,3 +65,24 @@ for (let i = 0; i < macBtn.length; i++) {
 
     };
 }
+
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+  const header = item.querySelector('.accordion-header');
+  const content = item.querySelector('.accordion-content');
+
+  header.addEventListener('click', () => {
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+    } else {
+      content.style.display = 'none';
+    }
+  });
+});
+
+
+
+
+

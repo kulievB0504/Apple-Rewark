@@ -67,20 +67,8 @@ for (let i = 0; i < macBtn.length; i++) {
 }
 
 
-const accordionItems = document.querySelectorAll('.accordion-item');
 
-accordionItems.forEach(item => {
-  const header = item.querySelector('.accordion-header');
-  const content = item.querySelector('.accordion-content');
 
-  header.addEventListener('click', () => {
-    if (content.style.display === 'none') {
-      content.style.display = 'block';
-    } else {
-      content.style.display = 'none';
-    }
-  });
-});
 
 
 
